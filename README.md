@@ -23,27 +23,31 @@
 
 
 ## Code
-```
+
 int ledPin = 10; // define digital pin 10.
+
 void setup()
+
 {
 pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+
 }
+
 void loop()
 {
+
 digitalWrite(ledPin, HIGH); // set the LED on.
+
 delay(1000); // wait for a second.
+
 digitalWrite(ledPin, LOW); // set the LED off.
+
 delay(1000); // wait for a second
+
 }
+
 
 
 ## Output
-> The LED is blinked with a time interval of 1 second
-<iframe width="560" height="315"
-src=https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/1.mp4
-
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+!out(https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/1.mp4)
 
