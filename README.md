@@ -49,5 +49,5 @@ delay(1000); // wait for a second
 
 
 ## Output
-!out(https://youtube.com/shorts/LYO3MBzF8Gk?feature=share)
+(https://youtube.com/shorts/LYO3MBzF8Gk?feature=share)
 
