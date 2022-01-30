@@ -49,5 +49,5 @@ delay(1000); // wait for a second
 
 
 ## Output
-!out(https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/1.mp4)
+!out(https://youtube.com/shorts/LYO3MBzF8Gk?feature=share)
 
