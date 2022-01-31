@@ -127,4 +127,77 @@ digitalWrite(redled, LOW);// turn off red LED
 [[![video1](https://img.youtube.com/vi/xx9oFRN1428/0.jpg)](https://youtube.com/shorts/xx9oFRN1428)
 
 
+## Experiment 3 - LED Chasing Effect
 
+### Components
+
+* Arduino Uno
+* Breadboard
+* LED 6
+* Jumper wire
+* Restsor 220 oh
+
+### Circuit Diagram
+
+![Expriment 3](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/3.png)
+
+### Code
+
+int redled =10; // initialize digital pin 8.
+
+int yellowled =7; // initialize digital pin 7.
+
+int greenled =4; // initialize digital pin 4.
+
+void setup()
+
+{
+
+pinMode(redled, OUTPUT);// set the pin with red LED as “output”
+
+pinMode(yellowled, OUTPUT); // set the pin with yellow LED as “output”
+
+pinMode(greenled, OUTPUT); // set the pin with green LED as “output”
+
+}
+
+void loop()
+
+{
+
+digitalWrite(greenled, HIGH);//// turn on green LED
+
+delay(5000);// wait 5 seconds
+
+
+
+digitalWrite(greenled, LOW); // turn off green LED
+
+for(int i=0;i<3;i++)// blinks for 3 times
+
+{
+
+delay(500);// wait 0.5 second
+
+digitalWrite(yellowled, HIGH);// turn on yellow LED
+
+delay(500);// wait 0.5 second
+
+digitalWrite(yellowled, LOW);// turn off yellow LED
+
+} 
+
+delay(500);// wait 0.5 second
+
+digitalWrite(redled, HIGH);// turn on red LED
+
+delay(5000);// wait 5 seconds
+
+digitalWrite(redled, LOW);// turn off red LED
+
+}
+
+
+### output
+
+[[![video1](https://img.youtube.com/vi/feebf7U-Txk/0.jpg)](https://youtube.com/shorts/feebf7U-Txk?feature=play)
