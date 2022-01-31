@@ -49,5 +49,54 @@ delay(1000); // wait for a second
 
 
 ## Output
-[[![Episode 4](https://img.youtube.com/vi/LYO3MBzF8Gk/0.jpg)](https://youtube.com/shorts/LYO3MBzF8Gk)
+[[![video1](https://img.youtube.com/vi/LYO3MBzF8Gk/0.jpg)](https://youtube.com/shorts/LYO3MBzF8Gk)
+
+
+## Experiment 2 - Traffic Light
+### Components
+* Arduino Uno
+* Breadboard
+* LED RED BLUE GREEN
+* Jumper wire
+* Restsor 220 ohm
+
+### Circuit
+![Expriment 2](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/2.png)
+
+
+### Code
+
+int redled =10; // initialize digital pin 8.
+int yellowled =7; // initialize digital pin 7.
+int greenled =4; // initialize digital pin 4.
+void setup()
+{
+pinMode(redled, OUTPUT);// set the pin with red LED as “output”
+pinMode(yellowled, OUTPUT); // set the pin with yellow LED as “output”
+pinMode(greenled, OUTPUT); // set the pin with green LED as “output”
+}
+void loop()
+{
+digitalWrite(greenled, HIGH);//// turn on green LED
+delay(5000);// wait 5 seconds
+
+digitalWrite(greenled, LOW); // turn off green LED
+for(int i=0;i<3;i++)// blinks for 3 times
+{
+delay(500);// wait 0.5 second
+digitalWrite(yellowled, HIGH);// turn on yellow LED
+delay(500);// wait 0.5 second
+digitalWrite(yellowled, LOW);// turn off yellow LED
+} 
+delay(500);// wait 0.5 second
+digitalWrite(redled, HIGH);// turn on red LED
+delay(5000);// wait 5 seconds
+digitalWrite(redled, LOW);// turn off red LED
+}
+
+###output
+
+[[![video1](https://img.youtube.com/vi/xx9oFRN1428/0.jpg)](https://youtube.com/shorts/xx9oFRN1428)
+
+
 
