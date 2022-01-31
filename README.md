@@ -19,7 +19,7 @@
 
 ## Circuit Diagram
 
-!(https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/1.png)
+![Expriment 1](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/1.png)
 
 
 ## Code
