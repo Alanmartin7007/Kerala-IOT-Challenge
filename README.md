@@ -302,5 +302,137 @@ digitalWrite(buzzer, HIGH); // produce sound
 
 ### Output
 
-[![video](https://img.youtube.com/vi/G_p7adSctlQ/0.jpg)](https://youtube.com/shorts/S9a0FcGu3Fw)
+[![video](https://img.youtube.com/vi/S9a0FcGu3Fw/0.jpg)](https://youtube.com/shorts/S9a0FcGu3Fw)
+
+
+## Experiment 6 -RGB LED
+
+### Components
+* Arduino Uno
+* Breadboard
+* RGB LED
+* Jumper wire
+* Restsor 220 ohm 
+
+### Circuit Diagram
+
+![Image](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/6.png)
+
+### Code
+
+int redpin = 11; //select the pin for the red LED
+
+int bluepin =10; // select the pin for the blue LED
+
+int greenpin =9;// select the pin for the green LED
+
+int val;
+
+void setup() {
+
+pinMode(redpin, OUTPUT);
+
+pinMode(bluepin, OUTPUT);
+
+pinMode(greenpin, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop() 
+
+{
+
+for(val=255; val>0; val--)
+
+{
+
+analogWrite(11, val);
+
+analogWrite(10, 255-val);
+
+analogWrite(9, 128-val);
+
+delay(1); 
+
+}
+
+for(val=0; val<255; val++)
+
+{
+
+analogWrite(11, val);
+
+analogWrite(10, 255-val);
+
+analogWrite(9, 128-val);
+
+delay(1); 
+
+}
+
+Serial.println(val, DEC);
+
+}
+
+
+### Output
+
+[![video](https://img.youtube.com/vi/_qaTREAmWR8/0.jpg)](https://www.youtube.com/shorts/_qaTREAmWR8)
+
+
+### Experiment 7 : LDR Light Sensor
+
+### Components Required 
+
+*Arduino Uno Board
+*Photo Resistor*1
+*Red M5 LED*1
+*10KΩ Resistor*1
+*220Ω Resistor*1
+*Breadboard*1
+*Breadboard Jumper Wire*5
+*USB cable*1
+
+### Circuit Diagram
+
+![image](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/7.png)
+
+### Code
+
+int potpin=0;// initialize analog pin 0, connected with photovaristor
+
+int ledpin=11;// initialize digital pin 11, 
+
+int val=0;// initialize variable val
+
+void setup()
+
+{
+
+pinMode(ledpin,OUTPUT);// set digital pin 11 as “output”
+
+Serial.begin(9600);// set baud rate at “9600”
+
+}
+
+void loop()
+
+{
+
+val=analogRead(potpin);// read the value of the sensor and assign it to val
+
+Serial.println(val);// display the value of val
+
+analogWrite(ledpin,val/4);// set up brightness（maximum value 255）
+
+delay(10);// wait for 0.01 
+
+}
+
+
+### Output
+
+[![video](https://img.youtube.com/vi/5ACuo1C0Xhw/0.jpg)](https://www.youtube.com/shorts/5ACuo1C0Xhw)
 
