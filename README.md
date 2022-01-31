@@ -561,7 +561,7 @@ delay(500);// wait for 0.5 second
 
 ### Output
 
-[![video]((https://img.youtube.com/vi/0Aj8wgyUiVM/0.jpg)](https://www.youtube.com/shorts/0Aj8wgyUiVM)
+[![video](https://img.youtube.com/vi/0Aj8wgyUiVM/0.jpg)](https://www.youtube.com/shorts/0Aj8wgyUiVM)
 
 
 ## Experiment  10- IR Remote Control Using TSOP
