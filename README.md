@@ -201,3 +201,106 @@ digitalWrite(redled, LOW);// turn off red LED
 ### output
 
 [[![video1](https://img.youtube.com/vi/feebf7U-Txk/0.jpg)](https://youtube.com/shorts/feebf7U-Txk?feature=play)
+
+
+## Experiment 4 -Button Controlled LED
+
+
+### Components
+
+*Arduino Uno
+*Button switch*1
+*Red M5 LED*1
+*220ΩResistor*1
+*10KΩ Resistor*1
+*Breadboard*1
+*Breadboard Jumper Wire*6
+*USB cable*1
+
+### Circuit Diagram
+
+
+![image](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/4.png)
+
+### Code
+
+
+int ledpin=11;// initialize pin 11
+
+int inpin=7;// initialize pin 7
+
+int val;// define val
+
+void setup()
+
+{
+
+pinMode(ledpin,OUTPUT);// set LED pin as “output”
+
+pinMode(inpin,INPUT);// set button pin as “input”
+
+}
+
+void loop()
+
+{
+
+val=digitalRead(inpin);// read the level value of pin 7 and assign if to val
+
+if(val==LOW)// check if the button is pressed, if yes, turn on the LED
+
+{ digitalWrite(ledpin,LOW);}
+
+else
+
+{ digitalWrite(ledpin,HIGH);}
+
+}
+
+
+
+### Output
+
+[![video](https://img.youtube.com/vi/THfPDleDF7Y/0.jpg)](https://youtube.com/shorts/THfPDleDF7Y)
+
+
+
+## Experiment 5 -BUZZER
+
+### Components
+
+*Arduino Uno
+*Buzzer*1
+*Breadboard*1
+*Breadboard Jumper Wire*2
+*USB cable*1
+
+### Circuit Diagram
+
+![image](https://github.com/Alanmartin7007/Kerala-IOT-Challenge/blob/main/5.png)
+
+### Code
+
+int buzzer=8;// initialize digital IO pin that controls the buzzer
+
+void setup() 
+
+{ 
+
+pinMode(buzzer,OUTPUT);// set pin mode as “output”
+
+} 
+
+void loop() 
+
+{
+
+digitalWrite(buzzer, HIGH); // produce sound
+
+}
+
+
+### Output
+
+[![video](https://img.youtube.com/vi/G_p7adSctlQ/0.jpg)](https://youtube.com/shorts/S9a0FcGu3Fw)
+
