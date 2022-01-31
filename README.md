@@ -49,5 +49,5 @@ delay(1000); // wait for a second
 
 
 ## Output
-(https://youtube.com/shorts/LYO3MBzF8Gk?feature=share)
+[[![Episode 4](https://img.youtube.com/vi/LYO3MBzF8Gk/0.jpg)](https://youtube.com/shorts/LYO3MBzF8Gk)
 
